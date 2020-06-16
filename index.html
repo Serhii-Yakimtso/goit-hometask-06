@@ -57,7 +57,10 @@
       <!-- банер (герой) -->
       <section class="hero">
         <h1>эффективные решения <br />для вашего бизнеса</h1>
-        <a href="" class="button">Заказать услугу</a>
+        <button class="button-order" type="button" data-modal-open>
+          Заказать услугу
+        </button>
+        <!-- <a href="" class="button">Заказать услугу</a> -->
       </section>
 
       <!--Раздел "Особенность комании"-->
@@ -437,12 +440,19 @@
         <div>
           <b class="subscription-head">Подпишитесь на рассылку</b>
           <!-- вставить форму -->
-          <button type="button" class="button-subscription">
-            Подписаться
-            <svg class="icon-send">
-              <use href="./images/sprite.svg#icon-footer-send"></use>
-            </svg>
-          </button>
+          <form class="form-subscription">
+            <input
+              class="input-subscription"
+              type="email"
+              placeholder="E-mail"
+            />
+            <button type="button" class="button-subscription">
+              Подписаться
+              <svg class="icon-send">
+                <use href="./images/sprite.svg#icon-footer-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
       <!-- Подпись разработчика -->
@@ -452,7 +462,7 @@
     </footer>
 
     <!-- форма для заказа услуг -->
-    <div class="backdrop">
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <form class="order">
           <p class="order-title">Оставьте свои данные, мы вам перезвоним</p>
@@ -495,7 +505,7 @@
             </svg>
           </label>
           <button class="button-send" type="button">Отправить</button>
-          <button class="button-close" type="button">
+          <button class="button-close" type="button" data-modal-close>
             <svg class="form-close">
               <use href="../images/sprite.svg#icon-form-cross"></use>
             </svg>
@@ -503,5 +513,6 @@
         </form>
       </div>
     </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
