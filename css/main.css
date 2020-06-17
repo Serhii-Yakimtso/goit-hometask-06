@@ -235,7 +235,7 @@
 .form-input:not(:placeholder-shown) + .tel,
 .form-input:not(:placeholder-shown) + .email,
 .form-input:not(:placeholder-shown) + .comment {
-  top: -18px;
+  top: -10px;
   left: 16px;
   color: var(--main-accent-color);
 }
