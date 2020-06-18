@@ -361,11 +361,10 @@ section.clients {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
-/* .input-subscription:focus {
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-} */
+.input-subscription:focus {
+  outline: 0;
+  border: 1px solid var(--main-accent-color);
+}
 
 /* убираем верхний и нижний зазоры кнопки "подписатся" */
 /* задаем шрифт кнопке "подписатся */
